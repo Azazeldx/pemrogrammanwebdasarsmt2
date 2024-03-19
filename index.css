@@ -159,6 +159,7 @@ body.toggle .grid * {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
   position: relative;
+  z-index: 0;
 }
 
 .card {
@@ -495,6 +496,7 @@ body.toggle .grid * {
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
+    z-index: 1;
   }
   ul {
     position: fixed;
@@ -505,7 +507,6 @@ body.toggle .grid * {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-    z-index: 1;
   }
   nav ul li {
     display: block;
@@ -514,6 +515,7 @@ body.toggle .grid * {
   }
   nav ul li a {
     font-size: 20px;
+    z-index: 1;
   }
   a:hover,
   a.active {
@@ -527,13 +529,13 @@ body.toggle .grid * {
     margin: auto;
     width: 100%;
     margin-top: 30px;
-    z-index: -1;
+    z-index: 0;
   }
   .grid {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: -1;
+    z-index: 0;
   }
 
   .card h4 {
