@@ -67,6 +67,10 @@ html {
   --blur-opacity: 0.01;
 }
 
+section {
+  margin-top: 8rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
