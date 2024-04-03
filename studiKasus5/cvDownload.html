@@ -3,12 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    <header style="text-align: center; margin-top: 5rem">
-      <img src="../Asset image/flat,750x,075,f-pad,750x1000,f8f8f8.webp" width="200" height="200" style="border-radius: 50%" />
-      <a href="Cv/CV_DimaasGracioPaskahito.pdf"> <h1>Download CV DISINI!</h1></a>
-    </header>
+    <nav>
+      <a href="index.html">Home</a> | <a href="cvDownload.html">Download CV</a> | <a href="contact.html">Contact</a> |
+      <a href="aboutMe.html">About me</a>
+    </nav>
+
+    <hr />
+
+    <div style="width: 50%; margin: auto; display: grid">
+      <img src="../Asset image/flat,750x,075,f-pad,750x1000,f8f8f8.webp" width="200" height="200" style="border-radius: 50%; margin: auto" />
+      <a href="Cv/CV_DimaasGracioPaskahito.pdf"> <h1 style="text-align: center">Download CV DISINI!</h1></a>
+    </div>
+    <hr />
+    <footer style="text-align: center"></footer>
+    <script>
+      var audio = new Audio("http://music.ogg");
+
+      audio.oncanplaythrough = function () {
+        audio.play();
+      };
+
+      audio.loop = true;
+
+      audio.onended = function () {
+        audio.play();
+      };
+    </script>
   </body>
 </html>
